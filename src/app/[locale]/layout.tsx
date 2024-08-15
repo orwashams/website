@@ -1,9 +1,26 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "../globals.css";
+import { Inter, Rubik, Vazirmatn } from "next/font/google";
+
+import { cn } from "@/lib/utils";
+
 import { getCurrentLocale } from "@/locales/server";
 
+import Navbar from "@/components/layout/navbar";
+
+import "../globals.css";
+
 const inter = Inter({ subsets: ["latin"] });
+const rubik = Rubik({
+  subsets: ["hebrew"],
+  variable: "--font-hebrew",
+  weight: "300",
+});
+
+const vazirmatn = Vazirmatn({
+  subsets: ["arabic"],
+  variable: "--font-arabic",
+  weight: "300",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -31,8 +48,22 @@ export default function RootLayout({
 }>) {
   const locale = getCurrentLocale();
   return (
-    <html lang={locale}>
-      <body className={inter.className}>{children}</body>
+    <html
+      lang={locale}
+      className={`${inter.className} ${rubik.variable} ${vazirmatn.variable} $ scroll-smooth`}
+    >
+      <body
+        className={cn(
+          {
+            "text-right font-hebrew  ": locale === "he",
+            "text-right font-arabic ": locale === "ar",
+          },
+          " px-96 text-secondary"
+        )}
+      >
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
