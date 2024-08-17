@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Rubik, Vazirmatn } from "next/font/google";
+import { Inter, Rubik, Vazirmatn, Syncopate } from "next/font/google";
 
 import { cn } from "@/lib/utils";
 
@@ -9,16 +9,9 @@ import Navbar from "@/components/layout/navbar";
 
 import "../globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
 const rubik = Rubik({
-  subsets: ["hebrew"],
+  subsets: ["hebrew", "arabic", "latin"],
   variable: "--font-hebrew",
-  weight: "300",
-});
-
-const vazirmatn = Vazirmatn({
-  subsets: ["arabic"],
-  variable: "--font-arabic",
   weight: "300",
 });
 
@@ -48,19 +41,8 @@ export default function RootLayout({
 }>) {
   const locale = getCurrentLocale();
   return (
-    <html
-      lang={locale}
-      className={`${inter.className} ${rubik.variable} ${vazirmatn.variable} $ scroll-smooth`}
-    >
-      <body
-        className={cn(
-          {
-            "text-right font-hebrew  ": locale === "he",
-            "text-right font-arabic ": locale === "ar",
-          },
-          " px-96 text-secondary"
-        )}
-      >
+    <html lang={locale} className={` ${rubik.variable}  scroll-smooth`}>
+      <body className={" px-96 text-secondary bg-primary flex flex-col"}>
         <Navbar />
         {children}
       </body>

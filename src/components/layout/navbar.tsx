@@ -2,16 +2,23 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <nav className="bg-blue-400 sticky top-0 z-50">
-      <div>
+    <nav className="py-4 sticky top-0 z-50 bg-gray-700 flex justify-between">
+      <div className="flex items-center gap-4">
         <Image
           src={"/logos/brand_white.svg"}
-          width={100}
-          height={100}
+          width={60}
+          height={60}
           alt="logo"
         />
+        <p className="font-bold">orwa.dev</p>
       </div>
-      <div></div>
+      <div className="flex items-center gap-4">
+        <p>Contact Us</p>
+        <p>Pricing</p>
+        <p>FAQ</p>
+        <p>About</p>
+        <p>Services</p>
+      </div>
     </nav>
   );
 }
