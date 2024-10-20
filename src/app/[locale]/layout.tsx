@@ -42,8 +42,7 @@ export default function RootLayout({
   const locale = getCurrentLocale();
   return (
     <html lang={locale} className={` ${rubik.variable}  scroll-smooth`}>
-      <body className={" px-96 text-secondary bg-primary flex flex-col"}>
-        <Navbar />
+      <body className={" px-72 text-secondary bg-primary flex flex-col"}>
         {children}
       </body>
     </html>

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <nav className="py-4 sticky top-0 z-50 bg-gray-700 flex justify-between">
+    <nav className="py-4 absolute  w-full left-0   flex justify-between  z-10">
       <div className="flex items-center gap-4">
         <Image
           src={"/logos/brand_white.svg"}
