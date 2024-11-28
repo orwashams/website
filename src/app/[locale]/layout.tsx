@@ -50,7 +50,7 @@ export default async function RootLayout({
     >
       <body
         className={
-          "  text-secondary flex flex-col bg-[url('https://www.transparenttextures.com/patterns/light-sketch.png')] "
+          "  text-secondary flex flex-col bg-[url('/low-contrast-linen.png')] "
         }
       >
         {children}
