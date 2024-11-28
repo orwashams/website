@@ -18,8 +18,8 @@ export const GridBeams = () => {
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
   const gridSize = 30;
-  const maxBeams = 3;
-  const beamAddProbability = 0.03;
+  const maxBeams = 5;
+  const beamAddProbability = 0.06;
 
   // Memoize dimension update to prevent unnecessary re-renders
   const updateDimensions = useCallback(() => {
@@ -130,9 +130,9 @@ export const GridBeams = () => {
         const endY = beam.start.y + (beam.end.y - beam.start.y) * endProgress;
 
         const gradient = ctx.createLinearGradient(startX, startY, endX, endY);
-        gradient.addColorStop(0, "rgba(132, 204, 255, 0)");
-        gradient.addColorStop(0.5, "rgba(132, 204, 255, 0.3)");
-        gradient.addColorStop(1, "rgba(132, 204, 255, 0)");
+        gradient.addColorStop(0, "rgba(151,152,154, 0.3)");
+        gradient.addColorStop(0.5, "rgba(151,152,154, 0.7)");
+        gradient.addColorStop(1, "rgba(151,152,154, 0)");
 
         ctx.strokeStyle = gradient;
         ctx.lineWidth = 1;

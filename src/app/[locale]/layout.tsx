@@ -8,7 +8,6 @@ import { getCurrentLocale } from "@/locales/server";
 import Navbar from "@/components/layout/navbar";
 
 import "../globals.css";
-import { Texture } from "@/components/layout/layout-texture";
 
 const rubik = Rubik({
   subsets: ["hebrew", "arabic", "latin"],
@@ -51,17 +50,21 @@ export default async function RootLayout({
     >
       <body
         className={
-          "  text-secondary flex flex-col bg-[url('/asfalt-dark.png')] "
+          "  text-secondary flex flex-col bg-[url('https://www.transparenttextures.com/patterns/light-sketch.png')] "
         }
-        // style={{
-        //   background: "url(/asfalt-dark.png)",
-        //   backgroundRepeat: "repeat-y",
-        // }}
       >
-        {/* <Texture /> */}
-
         {children}
       </body>
     </html>
   );
 }
+
+/**
+ * url("https://www.transparenttextures.com/patterns/iron-grip.png");
+ *
+ *
+ *
+ *
+ *
+ *
+ *  */
