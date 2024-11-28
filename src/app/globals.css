@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary: #303135;
+  --secondary: #d2d2d2;
+}
 
 body {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
