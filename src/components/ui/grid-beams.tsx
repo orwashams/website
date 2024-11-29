@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 interface Beam {
@@ -11,7 +12,11 @@ interface Beam {
   isHorizontal: boolean;
 }
 
-export const GridBeams = () => {
+type Props = {
+  children?: React.ReactNode;
+};
+
+export const GridBeams = ({ children }: Props) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animationFrameRef = useRef<number | null>(null);
@@ -169,13 +174,7 @@ export const GridBeams = () => {
         style={{ mixBlendMode: "screen" }}
       />
       <div className="relative z-10 flex flex-col items-center justify-center w-full h-full text-center">
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-          Join the waitlist
-        </h1>
-        <p className="text-sm md:text-lg text-gray-400 max-w-xs md:max-w-2xl mx-auto px-4">
-          Welcome to our platform. The best service on the web. We provide
-          reliable, scalable, and customizable solutions for your business.
-        </p>
+        {children}
       </div>
     </div>
   );

@@ -20,8 +20,8 @@ Will be te store front for the business
 
 ### Landing
 
-- [ ] Hero
-- [ ] A Word beneath the hero section. (Premium Web Design, Development, and SEO services to help your business stand out.) type shi.
+- [x] Hero
+- [x] A Word beneath the hero section. (Premium Web Design, Development, and SEO services to help your business stand out.) type shi.
 - [ ] "My Services" title
 - [ ] My Services section
 - [ ] Work Section
@@ -35,8 +35,8 @@ Will be te store front for the business
 - [x] Background and colors
 - [x] Locale manager integration
 - [x] Grid bg
-- [ ] Style Navbar
+- [x] Style Navbar
 - [ ] Make Navbar responsive
-- [ ] Navbar logo change to just orwa. with some slick font or an image
+- [x] Navbar logo change to just orwa. with some slick font or an image
 - [ ] Make Hero section responsive
 - [ ]

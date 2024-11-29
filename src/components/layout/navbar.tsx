@@ -3,6 +3,7 @@ import { AnimatedLink } from "@/components/ui/animated-link";
 import { FlippingLink } from "@/components/ui/flipping-link";
 
 import { Pattaya } from "next/font/google";
+import Link from "next/link";
 
 const pattaya = Pattaya({
   weight: "400",
@@ -12,8 +13,13 @@ const pattaya = Pattaya({
 export default function Navbar() {
   return (
     <nav className="py-4  fixed  w-full left-0   flex justify-center   z-20 ">
-      <div className="flex items-center justify-center w-fit gap-16 border p-3 border-light/10 ">
-        <p className={`${pattaya.className} text-3xl tracking-tight `}>orwa.</p>
+      <div className="flex items-center justify-center w-fit gap-16 border p-3 border-light/10 backdrop-blur-sm bg-dark/20 rounded-lg">
+        <Link
+          href={"/"}
+          className={`${pattaya.className} text-3xl tracking-tight `}
+        >
+          orwa.
+        </Link>
 
         <div className="flex items-center gap-4 text-sm">
           <AnimatedLink href="#services">
