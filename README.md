@@ -13,7 +13,7 @@ Will be te store front for the business
 
 ## Layout
 
-### Static
+### Fixed
 
 - Navbar
 - available indicator

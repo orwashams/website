@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Rubik, Vazirmatn, Syncopate } from "next/font/google";
+import { Rubik } from "next/font/google";
 
 import { cn } from "@/lib/utils";
 
@@ -16,8 +16,8 @@ const rubik = Rubik({
 });
 
 export const metadata: Metadata = {
-  title: "Orwa",
-  description: "Orwa",
+  title: "orwa.dev",
+  description: "orwa.dev",
   icons: {
     icon: [
       {
@@ -44,13 +44,10 @@ export default async function RootLayout({
   const { locale } = await params;
 
   return (
-    <html
-      lang={locale}
-      className={` ${rubik.variable}  scroll-smooth bg-primary`}
-    >
+    <html lang={locale} className={` ${rubik.variable}  scroll-smooth bg-dark`}>
       <body
         className={
-          "  text-secondary flex flex-col bg-[url('/low-contrast-linen.png')] "
+          " text-light flex flex-col bg-[url('/low-contrast-linen.png')] "
         }
       >
         {children}
