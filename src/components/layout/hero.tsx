@@ -8,7 +8,9 @@ export default function Hero() {
       <GridBeams>
         <div className="flex flex-col items-center gap-24 pt-24">
           <Image
-            src={"/logos/brand_white.svg"}
+            src={
+              "https://utfs.io/a/k9x3ychkn3/pneMvLq0K87MBg77hRH7WChH9aJZujgPy3nXVoG68Sv4QqDK"
+            }
             alt={"orwa's logo"}
             width={500}
             height={500}

@@ -22,13 +22,11 @@ export const metadata: Metadata = {
     icon: [
       {
         media: "(prefers-color-scheme: light)",
-        url: "/logos/brand_black.svg",
-        href: "/logos/brand_black.svg",
+        url: "https://utfs.io/a/k9x3ychkn3/pneMvLq0K87Mu6pUWZ3WAmHcekU7YB139FtNZMP2SRonVGhQ",
       },
       {
         media: "(prefers-color-scheme: dark)",
-        url: "/logos/brand_white.svg",
-        href: "/logos/brand_white.svg",
+        url: "https://utfs.io/a/k9x3ychkn3/pneMvLq0K87M40CDVtII6MoXUmlqsd8vpYHg7kQTuZxB2fSJ",
       },
     ],
   },
@@ -47,7 +45,7 @@ export default async function RootLayout({
     <html lang={locale} className={` ${rubik.variable}  scroll-smooth bg-dark`}>
       <body
         className={
-          " text-light flex flex-col bg-[url('/low-contrast-linen.png')] "
+          " text-light flex flex-col bg-[image:url('https://utfs.io/a/k9x3ychkn3/pneMvLq0K87MhKYqssYesUHoVIYSEXkGF6CQbmn5JAxlWiLr')] "
         }
       >
         {children}
