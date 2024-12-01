@@ -12,7 +12,10 @@ const pattaya = Pattaya({
 
 export default function Navbar() {
   return (
-    <nav className="py-4  fixed  w-full left-0   flex justify-center   z-20 ">
+    <nav
+      className="py-4  fixed  w-full left-0   flex justify-center   z-20 "
+      aria-label="Main Navigation"
+    >
       <div className="flex items-center justify-center w-fit gap-16 border p-3 border-light/10 backdrop-blur-sm bg-dark/20 rounded-lg">
         <Link
           href={"/"}

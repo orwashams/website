@@ -31,6 +31,11 @@ Will be the store front for the business
 - [ ] Contact Us
 - [ ] Footer
 
+#### Tech
+
+- [ ] A infinite moving carousel of the tech used in the business (logos)
+- [ ] use carousel of icons from lucid
+
 ## Todo
 
 - [x] Background and colors
