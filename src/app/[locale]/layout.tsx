@@ -11,8 +11,7 @@ import "../globals.css";
 
 const rubik = Rubik({
   subsets: ["hebrew", "arabic", "latin"],
-  variable: "--font-hebrew",
-  weight: "300",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -42,7 +41,10 @@ export default async function RootLayout({
   const { locale } = await params;
 
   return (
-    <html lang={locale} className={` ${rubik.variable}  scroll-smooth bg-dark`}>
+    <html
+      lang={locale}
+      className={` ${rubik.className}  scroll-smooth bg-dark`}
+    >
       <body
         className={
           " text-light flex flex-col bg-[image:url('https://utfs.io/a/k9x3ychkn3/pneMvLq0K87MhKYqssYesUHoVIYSEXkGF6CQbmn5JAxlWiLr')] "

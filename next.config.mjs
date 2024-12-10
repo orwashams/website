@@ -14,6 +14,12 @@ const nextConfig = {
         port: "",
         search: "?c=1idpaZznFLrbi-vA0Q1",
       },
+      {
+        protocol: "https",
+        hostname: "assets.aceternity.com",
+        port: "",
+        pathname: "*/**",
+      },
     ],
   },
 };

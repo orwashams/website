@@ -1,20 +1,21 @@
 "use client";
 
-import { cn } from "@/lib/utils";
-import Image from "next/image";
 import * as React from "react";
 
+import { cn } from "@/lib/utils";
+import Link from "next/link";
+
 export const InfiniteMovingCards = ({
-  images,
+  items,
   direction = "left",
   speed = "fast",
   pauseOnHover = true,
   className,
   children,
 }: {
-  images: {
+  items: {
     url: string;
-    alt: string;
+    content: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -75,24 +76,32 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative   max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]  ",
         className
       )}
     >
       <ul
         ref={scrollerRef}
         className={cn(
-          " flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
+          " flex min-w-full shrink-0 gap-2 py-4 w-max flex-nowrap  ",
           start && "animate-scroll ",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
-        {images.map((item, idx) => (
+        {items.map((item, idx) => (
           <li
-            className=" max-w-full  flex-shrink-0 px-8 py-6 "
+            className=" max-w-full  flex-shrink-0 px-8 py-6"
             key={item.url + idx}
           >
-            <Image src={item.url} alt={item.alt} width={70} height={70} />
+            {/* <Image src={item.url} alt={item.alt} width={70} height={70} /> */}
+            <Link
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-light/80 hover:text-light"
+            >
+              {item.content}
+            </Link>
           </li>
         ))}
       </ul>

@@ -1,50 +1,69 @@
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-import { url } from "inspector";
 
 export const Toolkit = () => {
   return (
-    <section className=" w-full flex items-center flex-col ">
-      <h2 className="uppercase text-light/80">Development Toolkit</h2>
-      <InfiniteMovingCards
-        images={testimonials}
-        direction="right"
-        speed="fast"
-      />
+    <section className=" w-full flex items-center flex-col justify-center ">
+      {/* <h2 className="uppercase text-light/80 text-center">
+        Development Toolkit
+      </h2> */}
+      <InfiniteMovingCards items={links} direction="right" speed="normal" />
     </section>
   );
 };
 
-const testimonials = [
+const links = [
   {
-    url: "https://cdn.brandfetch.io/tailwindcss.com/w/512/h/305/theme/light/symbol?c=1idpaZznFLrbi-vA0Q1",
-    alt: "tailwind",
+    url: "https://v0.dev/",
+    content: "[v0]",
   },
   {
-    url: "https://utfs.io/a/k9x3ychkn3/pneMvLq0K87MBg77hRH7WChH9aJZujgPy3nXVoG68Sv4QqDK",
-    alt: "logo",
+    url: "https://nextjs.org/",
+    content: "[NextJS]",
   },
   {
-    url: "https://utfs.io/a/k9x3ychkn3/pneMvLq0K87MBg77hRH7WChH9aJZujgPy3nXVoG68Sv4QqDK",
-    alt: "logo",
+    url: "https://svelte.dev/",
+    content: "[Svelte]",
   },
   {
-    url: "https://utfs.io/a/k9x3ychkn3/pneMvLq0K87MBg77hRH7WChH9aJZujgPy3nXVoG68Sv4QqDK",
-    alt: "logo",
+    url: "https://react.dev/",
+    content: "[React]",
   },
   {
-    url: "https://utfs.io/a/k9x3ychkn3/pneMvLq0K87MBg77hRH7WChH9aJZujgPy3nXVoG68Sv4QqDK",
-    alt: "logo",
+    url: "https://github.com",
+    content: "[GitHub]",
   },
   {
-    url: "https://utfs.io/a/k9x3ychkn3/pneMvLq0K87MBg77hRH7WChH9aJZujgPy3nXVoG68Sv4QqDK",
-    alt: "logo",
+    url: "https://vercel.com/",
+    content: "[Vercel]",
   },
   {
-    url: "https://utfs.io/a/k9x3ychkn3/pneMvLq0K87MBg77hRH7WChH9aJZujgPy3nXVoG68Sv4QqDK",
-    alt: "logo",
+    url: "https://coolify.io/",
+    content: "[Coolify]",
   },
   {
-    url: "https://utfs.io/a/k9x3ychkn3/pneMvLq0K87MBg77hRH7WChH9aJZujgPy3nXVoG68Sv4QqDK",
-    alt: "logo",
+    url: "https://www.sqlite.org/",
+    content: "[SQLite]",
+  },
+  {
+    url: "https://turso.tech",
+    content: "[Turso]",
+  },
+
+  {
+    url: "https://www.typescriptlang.org/",
+    content: "[TypeScript]",
+  },
+  {
+    url: "https://ui.aceternity.com",
+    content: "[AceternityUI]",
+  },
+
+  {
+    url: "https://tailwindcss.com/",
+    content: "[TailwindCSS]",
+  },
+  {
+    url: "https://motion.dev/",
+    content: "[Motion]",
   },
 ];
