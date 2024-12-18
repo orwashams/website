@@ -69,12 +69,12 @@ Will be the store front for the business
 - [ ] Add contact us section without form, its button to redirect to contact page
 - [ ] Add footer,
 
-## Features section
+## Capabilities section
 
-- [ ] Dark/light mode
-- [ ] CMS
-- [ ] Ecommerce (buy/sell, shopping cart)
-- [ ] Custom fine grained Animations
-- [ ] Multi-locale
-- [ ] Forms
-- [ ]
+- [x] Dark/light mode
+- [ ] CMS (edit to change the "Some of our capabilities" header)
+- [ ] Ecommerce (buy/sell, shopping cart) (fancy button, gets bigger the more you click it)
+- [ ] Custom fine grained Animations (some funky animation, object gets away from the mouse cursor)
+- [ ] Multi-locale (changes locales)
+- [ ] Forms (some inputs the a toast)
+- [ ] Draw(like tldraw)

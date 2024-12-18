@@ -8,7 +8,7 @@ type Props = {
 
 export const ProcessCard = (props: Props) => {
   return (
-    <div className="w-full  border border-light/30 text-light/70 bg-dark shadow-xl shadow-light/5 p-4  gap-2  flex flex-col">
+    <div className="w-full  border border-light/30 text-light/70 bg-dark shadow-xl shadow-light/5 p-8 pt-4 pr-4  gap-2  flex flex-col">
       <div className="  flex justify-end ">
         <div className="border border-light/30 bg-light/5 p-1 uppercase">
           <p>{props.time}</p>

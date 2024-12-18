@@ -8,6 +8,7 @@ import { Services } from "@/components/layout/services";
 import { Work } from "@/components/layout/work";
 import { Process } from "@/components/layout/process";
 import { AboutMe } from "@/components/layout/aboutme";
+import { Showcase } from "@/components/layout/showcase";
 
 export default async function Home() {
   const t = await getI18n();
@@ -25,6 +26,8 @@ export default async function Home() {
       <Work />
 
       <Process />
+
+      <Showcase />
 
       <AboutMe />
       {/* <Hero /> */}
