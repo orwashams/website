@@ -18,8 +18,8 @@ export const FlippingLink = async ({ children, ...props }: Props) => {
       role="link"
       className="flex"
     >
-      <button className="group relative h-9  overflow-hidden rounded-md bg-dark  px-6 invert ">
-        <div className=" text-dark motion-reduce:transition-none transition duration-500 group-hover:-translate-y-9 dark:text-light">
+      <button className="group relative h-9  overflow-hidden rounded-md bg-light  px-6  ">
+        <div className=" text-dark motion-reduce:transition-none transition duration-500 group-hover:-translate-y-9 ">
           <div className="flex h-9 items-center justify-center  " id="contact">
             <p>{children}</p>
           </div>

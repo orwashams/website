@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { AnimatedLink } from "@/components/ui/animated-link";
 import { FlippingLink } from "@/components/ui/flipping-link";
 

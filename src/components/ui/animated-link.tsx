@@ -27,8 +27,8 @@ export const AnimatedLink = ({
       <Link
         href={href}
         className='relative  after:absolute after:bottom-[0] after:left-[0] after:h-[2px] after:w-full
-                after:origin-bottom-left after:scale-x-0 after:bg-dark/70 after:content-[""] after:[transition:transform_0.25s_ease-out] hover:after:origin-bottom-right 
-                hover:after:scale-x-100 dark:after:bg-light/70'
+                after:origin-bottom-left after:scale-x-0 after:bg-light/70 after:content-[""] after:[transition:transform_0.25s_ease-out] hover:after:origin-bottom-right 
+                hover:after:scale-x-100'
       >
         {children}
       </Link>
