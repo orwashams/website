@@ -2,6 +2,8 @@
 import { useState } from "react";
 import { CmsShowcase } from "../ui/cms-showcase";
 import { DarkLightShowcase } from "../ui/darklight-showcase";
+import { AnimationShowcase } from "../ui/animation-showcase";
+import { Showcase3D } from "../ui/3d-showcase";
 
 export const Showcase = () => {
   const [title, setTitle] = useState("SOME OF OUR CAPABILITIES");
@@ -12,6 +14,10 @@ export const Showcase = () => {
         <DarkLightShowcase />
 
         <CmsShowcase title={title} setTitle={setTitle} />
+
+        <AnimationShowcase />
+
+        <Showcase3D />
       </div>
     </div>
   );

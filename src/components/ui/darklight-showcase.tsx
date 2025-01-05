@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 export function DarkLightShowcase() {
   // const [isOn, setIsOn] = useState(false);
 
-  const [isOn, setIsOn] = useState(false);
+  const [isOn, setIsOn] = useState(true);
 
   const toggleSwitch = () => {
     setIsOn(!isOn);
@@ -32,10 +32,10 @@ export function DarkLightShowcase() {
         isOn && "bg-dark "
       )}
     >
-      <p className={cn("text-dark uppercase", isOn && "text-light")}>
+      <h3 className={cn("text-dark uppercase", isOn && "text-light")}>
         {" "}
         Dark/Light Mode
-      </p>
+      </h3>
 
       <div
         onPointerDown={toggleSwitch}

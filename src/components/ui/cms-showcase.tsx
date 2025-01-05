@@ -31,15 +31,10 @@ export const CmsShowcase = ({ title, setTitle }: Props) => {
   return (
     <div
       className={cn(
-        "w-44 h-44 border border-light/30 bg-dark flex flex-col gap-8 py-6 rounded-2xl transition-colors duration-500"
+        "w-44 h-44 border border-light/30 bg-dark flex flex-col gap-8 py-6 rounded-2xl transition-colors duration-500 items-center justify-between"
       )}
     >
-      <div className="flex flex-col gap-2 items-center">
-        <p className={cn("text-light uppercase")}>CMS</p>
-        <p className={cn("text-light italic text-xs text-center font-bold")}>
-          Change the content of Your site easily with CMS
-        </p>
-      </div>
+      <h3 className={cn("text-light uppercase")}>CMS</h3>
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogTrigger asChild className="flex justify-center">

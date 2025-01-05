@@ -73,8 +73,9 @@ Will be the store front for the business
 
 - [x] Dark/light mode
 - [x] CMS (edit to change the "Some of our capabilities" header)
-- [ ] Ecommerce (buy/sell, shopping cart) (fancy button, gets bigger the more you click it)
-- [ ] Custom fine grained Animations (some funky animation, object gets away from the mouse cursor)
+
+- [x] Custom fine grained Animations (some funky animation, object gets away from the mouse cursor)
+- [x] 3d (3d card from aceternity)
 - [ ] Multi-locale (changes locales) "to add a ! (warning) that we don't offer translation services except Hebrew,Enlgish,Arabic"
 - [ ] Forms (some inputs the a toast)
 - [ ] Draw(like tldraw)
