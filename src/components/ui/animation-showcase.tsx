@@ -13,7 +13,7 @@ export function AnimationShowcase() {
 
       <div className="flex flex-col items-center h-full">
         <p className={cn("text-light italic text-sm text-center font-bold")}>
-          Captivating animations
+          Captivating Animations
         </p>
       </div>
       <Meteors number={30} />

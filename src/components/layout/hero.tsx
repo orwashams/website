@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 export default function Hero() {
   return (
-    <section className="relative w-full  h-screen flex items-center flex-col  -z-10">
+    <section className="relative  w-full  h-screen flex items-center flex-col  -z-10">
       <GridBeams>
         <div className="flex flex-col items-center gap-24 pt-24">
           <Image

@@ -19,7 +19,7 @@ export function Showcase3D() {
           as="p"
           className={cn("text-light italic text-sm text-center font-bold ")}
         >
-          Interactive 3D Animations
+          Interactive 3D Elements
         </CardItem>
       </div>
     </CardContainer>

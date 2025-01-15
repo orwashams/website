@@ -19,12 +19,12 @@ export const FlippingLink = async ({ children, ...props }: Props) => {
       className="flex"
     >
       <button className="group relative h-9  overflow-hidden rounded-md bg-light  px-6  ">
-        <div className=" text-dark motion-reduce:transition-none transition duration-500 group-hover:-translate-y-9 ">
-          <div className="flex h-9 items-center justify-center  " id="contact">
+        <div className=" text-dark motion-reduce:transition-none transition duration-500 group-hover:-translate-y-10 ">
+          <div className="flex h-10 items-center justify-center  " id="contact">
             <p>{children}</p>
           </div>
 
-          <div className="flex h-9 items-center justify-center " aria-hidden>
+          <div className="flex h-10 items-center justify-center " aria-hidden>
             <p>{children}</p>
           </div>
         </div>

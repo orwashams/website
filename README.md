@@ -64,7 +64,7 @@ Will be the store front for the business
 - [x] Add services section
 - [x] Add work section
 - [x] Add process section (steps kind of thing)
-- [ ] Add Features section
+- [x] Add Features section
 - [ ] Add short about me section with social media link
 - [ ] Add contact us section without form, its button to redirect to contact page
 - [ ] Add footer,
