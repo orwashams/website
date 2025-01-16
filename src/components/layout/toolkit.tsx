@@ -2,7 +2,7 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 export const Toolkit = () => {
   return (
-    <section className=" w-full flex items-center flex-col justify-center ">
+    <section className=" w-full flex items-center flex-col justify-center overflow-hidden">
       {/* <h2 className="uppercase text-light/80 text-center">
         Development Toolkit
       </h2> */}

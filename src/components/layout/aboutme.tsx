@@ -1,12 +1,20 @@
 import Image from "next/image";
 import { Socials } from "../ui/socials";
+import { TextCopy } from "../ui/text-copy";
 
 export const AboutMe = () => {
   return (
-    <section>
-      <div className="w-full flex items-center justify-between  py-24 gap-20">
+    <section
+      className="flex flex-col gap-4 justify-center items-center scroll-mt-28"
+      id="about"
+    >
+      <h2 className="  text-light/80 text-center">ABOUT ME</h2>
+
+      <div className="w-full flex items-center justify-between   gap-8 ">
         <div className="flex-1 flex justify-end ">
-          <p className="text-9xl italic font-thin ">Orwa</p>
+          <p className="text-lg sm:text-2xl md:text-4xl lg:text-6xl xl:text-8xl italic font-thin ">
+            Orwa
+          </p>
         </div>
 
         <div className="flex-1 flex justify-center">
@@ -22,13 +30,15 @@ export const AboutMe = () => {
         </div>
 
         <div className="flex-1 ">
-          <p className="text-9xl italic font-thin">Shams</p>
+          <p className="text-lg sm:text-2xl md:text-4xl lg:text-6xl xl:text-8xl italic font-thin ">
+            Shams
+          </p>
         </div>
       </div>
 
-      <div className="flex px-56">
+      <div className="flex lg:px-56 md:px-32 sm:px-16  px-8  ">
         <div className="flex-1 flex items-center">
-          <p className="text-2xl text-center">
+          <p className="text-sm md:text-lg lg:text-2xl text-center">
             Hi, I'm Orwa - a freelancer specializing in premium web design,
             development, and SEO services. I'm passionate about creating unique
             and effective solutions for my clients, and I bring a personal touch
@@ -38,6 +48,11 @@ export const AboutMe = () => {
       </div>
 
       <Socials />
+      <TextCopy
+        text="GET IN TOUCH"
+        toCopy="contact@orwa.dev"
+        tooltipText="Email Copied!"
+      />
     </section>
   );
 };

@@ -1,13 +1,17 @@
+import { ArrowDown } from "lucide-react";
 import { WorkCard } from "../ui/work-card";
 
 export const Work = () => {
   return (
-    <section className=" w-full flex  flex-col gap-4">
-      <div className="p-4">
-        <h2 className="text-3xl">Selected Work</h2>
+    <section className=" w-full flex  flex-col gap-4 scroll-mt-24 " id="work">
+      <div className="flex items-center gap-4 w-full justify-center">
+        <div className="group flex items-center gap-2  bg-dark hover:bg-light/5 text-white p-2  transition-all duration-300 ease-in-out border-light/50 border rounded-full">
+          <ArrowDown size={20} />
+        </div>
+        <h2 className="uppercase text-light/80">Selected Work</h2>
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-8 ">
         <WorkCard
           href="https://www.theburgerplace.co.il"
           imageSrc="https://utfs.io/a/k9x3ychkn3/pneMvLq0K87MNOWykk8HldY4Ir697fVtTop3KnxZjgE80cUv"

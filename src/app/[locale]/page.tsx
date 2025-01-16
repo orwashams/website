@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import { getI18n } from "@/locales/server";
 import Hero from "@/components/layout/hero";
-import Navbar from "@/components/layout/navbar";
+import { Navbar } from "@/components/layout/navbar";
 import { Toolkit } from "@/components/layout/toolkit";
 import { Services } from "@/components/layout/services";
 import { Work } from "@/components/layout/work";
@@ -14,7 +14,7 @@ export default async function Home() {
   const t = await getI18n();
 
   return (
-    <main className="flex flex-col   px-4 md:px-52 lg:px-72 text-light gap-28 ">
+    <main className="flex flex-col gap-16 px-2 sm:px-16 md:px-32 lg:px-56 pb-16">
       <Navbar />
 
       <Hero />
@@ -30,8 +30,6 @@ export default async function Home() {
       <Showcase />
 
       <AboutMe />
-
-      {/* <Hero /> */}
     </main>
   );
 }

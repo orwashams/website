@@ -5,8 +5,6 @@ import { cn } from "@/lib/utils";
 
 import { getCurrentLocale } from "@/locales/server";
 
-import Navbar from "@/components/layout/navbar";
-
 import "../globals.css";
 
 const rubik = Rubik({
@@ -47,7 +45,7 @@ export default async function RootLayout({
     >
       <body
         className={
-          " text-light flex flex-col bg-[image:url('https://utfs.io/a/k9x3ychkn3/pneMvLq0K87MhKYqssYesUHoVIYSEXkGF6CQbmn5JAxlWiLr')] "
+          " text-light flex flex-col bg-[image:url('https://utfs.io/a/k9x3ychkn3/pneMvLq0K87MhKYqssYesUHoVIYSEXkGF6CQbmn5JAxlWiLr')] overflow-x-hidden"
         }
       >
         {children}

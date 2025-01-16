@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 
 import { Dot } from "lucide-react";
@@ -20,7 +21,7 @@ export const AnimatedLink = ({
   return (
     <section
       className={cn(
-        "flex  items-center hover:text-light/70 uppercase tracking-widest",
+        "flex  items-center hover:text-light/70 uppercase tracking-widest  pt-1",
         className
       )}
     >

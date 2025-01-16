@@ -5,8 +5,6 @@ type Props = {
   number: string;
   title: string;
   description: string;
-  link: string;
-  linkText: string;
 };
 
 export const Service = (props: Props) => {
@@ -17,7 +15,7 @@ export const Service = (props: Props) => {
       <h3 className="text-2xl">{props.title}</h3>
 
       <p className="opacity-80">{props.description}</p>
-
+      {/* 
       <Link href={props.link} className="flex items-center gap-4 group w-fit">
         <button
           type="button"
@@ -30,7 +28,7 @@ export const Service = (props: Props) => {
         </button>
 
         <p>{props.linkText}</p>
-      </Link>
+      </Link> */}
     </div>
   );
 };

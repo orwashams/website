@@ -10,7 +10,7 @@ export const Showcase = () => {
   return (
     <section className="w-full  flex items-center justify-center flex-col gap-4 ">
       <h2 className="  text-light/80 text-center">{title}</h2>
-      <div className="flex gap-4">
+      <div className="flex gap-4 sm:flex-row flex-col">
         <DarkLightShowcase />
 
         <CmsShowcase title={title} setTitle={setTitle} />
