@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 
-import { cn } from "@/lib/utils";
-
-import { getCurrentLocale } from "@/locales/server";
-
-import "../globals.css";
+import "./globals.css";
 
 const rubik = Rubik({
   subsets: ["hebrew", "arabic", "latin"],
@@ -38,11 +34,9 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
   children: React.ReactElement;
 }) {
-  const { locale } = await params;
-
   return (
     <html
-      lang={locale}
+      lang={(await params).locale}
       className={` ${rubik.className}  scroll-smooth bg-dark relative`}
     >
       <body
