@@ -17,7 +17,8 @@ export const WorkCard = (props: Props) => {
           src={props.imageSrc}
           alt={props.imageAlt}
           fill
-          className="object-cover opacity-35"
+          sizes="100%"
+          className="object-cover opacity-35 h-auto w-auto"
         />
 
         <div className="absolute bottom-10 left-0 bg-dark/70 backdrop-blur-sm  h-16 flex items-center w-full">

@@ -170,7 +170,7 @@ export const GridBeams = ({ children }: Props) => {
     >
       <canvas
         ref={canvasRef}
-        className="absolute inset-0"
+        className="absolute inset-0  motion-reduce:hidden"
         style={{ mixBlendMode: "screen" }}
       />
       <div className="relative z-10 flex flex-col items-center justify-center w-full h-full text-center">

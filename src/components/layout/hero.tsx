@@ -6,15 +6,15 @@ export default function Hero() {
   return (
     <section className="relative  w-full  h-screen flex items-center flex-col  -z-10">
       <GridBeams>
-        <div className="flex flex-col items-center gap-24 pt-24">
+        <div className="flex flex-col items-center gap-24 pt-24 ">
           <Image
             src={
               "https://utfs.io/a/k9x3ychkn3/pneMvLq0K87MBg77hRH7WChH9aJZujgPy3nXVoG68Sv4QqDK"
             }
             alt={"orwa's logo"}
-            width={500}
-            height={500}
-            className="drop-shadow-[0_0_15px_rgba(255,255,255,0.4)] "
+            width={400}
+            height={400}
+            className="drop-shadow-[0_0_15px_rgba(255,255,255,0.4)] h-auto w-auto scale-100"
           />
           <div className="flex flex-col items-center gap-8">
             <h1 className="text-4xl  md:text-6xl lg:text-8xl font-light  text-light italic text-center tracking-tighter max-w-[60%]">

@@ -29,6 +29,8 @@ export const metadata: Metadata = {
   },
 };
 
+export const dynamic = "force-static";
+
 export default async function RootLayout({
   params,
   children,
@@ -41,7 +43,7 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
-      className={` ${rubik.className}  scroll-smooth bg-dark`}
+      className={` ${rubik.className}  scroll-smooth bg-dark relative`}
     >
       <body
         className={
@@ -53,13 +55,3 @@ export default async function RootLayout({
     </html>
   );
 }
-
-/**
- * url("https://www.transparenttextures.com/patterns/iron-grip.png");
- *
- *
- *
- *
- *
- *
- *  */

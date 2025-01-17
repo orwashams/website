@@ -19,13 +19,13 @@ export const Navbar = () => {
 
   return (
     <nav
-      className="py-4 fixed top-0 right-0 -translate-x-1/2 flex justify-center z-50 px-2 sm:w-1/2 w-full   "
+      className="py-4 fixed top-0 right-0 lg:-translate-x-1/2 flex justify-center z-50 px-2 md:w-full lg:w-1/2 w-full   "
       aria-label="Main Navigation"
     >
       <div
-        className={`flex sm:flex-row flex-col w-full    items-center justify-between sm:justify-center px-4  p-3   border border-light/10 backdrop-blur-sm bg-dark/60 rounded-lg `}
+        className={`flex md:flex-row flex-col w-full    items-center justify-between md:justify-center px-4  p-3   border border-light/10 backdrop-blur-sm bg-dark/60 rounded-lg `}
       >
-        <div className="flex items-center  justify-between w-full  ">
+        <div className="flex items-center  justify-between w-full  gap-8">
           {/* Left */}
           <Link
             href={"/"}
@@ -35,7 +35,7 @@ export const Navbar = () => {
           </Link>
 
           {/* Middle */}
-          <div className=" items-center gap-4 text-sm hidden sm:flex  flex-1 w-full justify-center">
+          <div className=" items-center gap-4 text-sm hidden md:flex  flex-1 w-full justify-center">
             <AnimatedLink href="#about">
               <p>About</p>
             </AnimatedLink>
@@ -49,18 +49,18 @@ export const Navbar = () => {
           </div>
 
           {/* Right */}
-          <div className="flex-1 hidden sm:flex justify-end ">
+          <div className="flex-1 hidden md:flex justify-end ">
             <FlippingLink href={"#contact"}>Contact Us</FlippingLink>
           </div>
 
-          <div className="flex sm:hidden">
+          <div className="flex md:hidden">
             <HamburgerButton isOpen={isOpen} setIsOpen={setIsOpen} />
           </div>
         </div>
 
         <div
-          className={`sm:hidden transition-all duration-300 ease-in-out  ${
-            isOpen ? "h-56  opacity-100" : "h-0 opacity-0"
+          className={`md:hidden transition-all duration-300 ease-in-out  ${
+            isOpen ? "h-64  opacity-100" : "h-0 opacity-0"
           }`}
         >
           <div className="flex flex-col items-center gap-8 p-4  backdrop-blur-sm bg-dark/60 rounded-lg">
@@ -73,7 +73,9 @@ export const Navbar = () => {
             <AnimatedLink href="#work">
               <p>Work</p>
             </AnimatedLink>
-            <FlippingLink href={"#contact"}>Contact Us</FlippingLink>
+            <FlippingLink href={"mailto:contact@orwa.dev"}>
+              Contact Us
+            </FlippingLink>
           </div>
         </div>
       </div>

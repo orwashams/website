@@ -48,6 +48,7 @@ export function TextCopy({ text, toCopy, tooltipText }: Props) {
                 width: copied ? "100%" : "auto",
                 justifyContent: copied ? "center" : "flex-start",
               }}
+              style={{ minWidth: "50px" }}
               className="flex items-center gap-1 "
             >
               <AnimatePresence mode="wait">
@@ -58,7 +59,7 @@ export function TextCopy({ text, toCopy, tooltipText }: Props) {
                     animate={{ opacity: 1, width: "auto" }}
                     exit={{ opacity: 0, width: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="ml-2 whitespace-nowrap"
+                    className="text-nowrap"
                   >
                     {text}
                   </motion.span>

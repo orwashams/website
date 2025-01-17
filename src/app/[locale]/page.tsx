@@ -14,7 +14,7 @@ export default async function Home() {
   const t = await getI18n();
 
   return (
-    <main className="flex flex-col gap-16 px-2 sm:px-16 md:px-32 lg:px-56 pb-16">
+    <main className="flex flex-col gap-16 px-2 sm:px-16  lg:px-32 pb-16">
       <Navbar />
 
       <Hero />

@@ -36,13 +36,14 @@ export const AboutMe = () => {
         </div>
       </div>
 
-      <div className="flex lg:px-56 md:px-32 sm:px-16  px-8  ">
+      <div className="flex  ">
         <div className="flex-1 flex items-center">
           <p className="text-sm md:text-lg lg:text-2xl text-center">
-            Hi, I'm Orwa - a freelancer specializing in premium web design,
-            development, and SEO services. I'm passionate about creating unique
-            and effective solutions for my clients, and I bring a personal touch
-            to every project. Let's work together to bring your vision to life!
+            Hi, I&apos;m Orwa - a freelancer specializing in premium web design,
+            development, and SEO services. I&apos;m passionate about creating
+            unique and effective solutions for my clients, and I bring a
+            personal touch to every project. Let&apos;s work together to bring
+            your vision to life!
           </p>
         </div>
       </div>

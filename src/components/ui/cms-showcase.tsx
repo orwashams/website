@@ -49,7 +49,7 @@ export const CmsShowcase = ({ title, setTitle }: Props) => {
           <DialogHeader>
             <DialogTitle className="text-center">Edit Title</DialogTitle>
             <DialogDescription className="text-center">
-              Make changes to the title here. Click save when you're done.
+              Make changes to the title here. Click save when you&apos;re done.
             </DialogDescription>
           </DialogHeader>
           <div className="w-full">
