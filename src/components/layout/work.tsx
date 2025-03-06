@@ -13,12 +13,6 @@ export const Work = () => {
 
       <div className="grid md:grid-cols-2 grid-cols-1 gap-8 ">
         <WorkCard
-          href="https://www.theburgerplace.co.il"
-          imageSrc="https://utfs.io/a/k9x3ychkn3/pneMvLq0K87MNOWykk8HldY4Ir697fVtTop3KnxZjgE80cUv"
-          imageAlt="An screenshot of the burger place website"
-          title="The Burger Place"
-        />
-        <WorkCard
           href="https://www.jalaa.co.il"
           imageSrc="https://utfs.io/a/k9x3ychkn3/pneMvLq0K87M5WdOyEE4aSJjdvgQuCncklVzHI6KRoMhTPFf"
           imageAlt="An screenshot of jalaa.co.il website"

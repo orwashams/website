@@ -6,7 +6,7 @@ export function AnimationShowcase() {
   return (
     <div
       className={cn(
-        "w-44 h-44 border border-light/30  flex flex-col gap-8 py-6 rounded-2xl transition-colors duration-500  relative overflow-hidden items-center justify-center px-4"
+        "w-44 h-44 border border-light/30  flex flex-col gap-8 py-6 rounded-2xl transition-colors duration-500  relative overflow-hidden items-center justify-center px-4 bg-dark"
       )}
     >
       <h3 className={cn("text-light uppercase")}>Animations</h3>

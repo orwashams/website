@@ -6,7 +6,7 @@ export function Showcase3D() {
   return (
     <CardContainer
       className={cn(
-        "w-44 h-44 border border-light/30  flex flex-col gap-8 py-6 rounded-2xl transition-colors duration-500   justify-center items-center px-4"
+        "w-44 h-44 border border-light/30  flex flex-col gap-8 py-6 rounded-2xl transition-colors duration-500   justify-center items-center px-4 bg-dark"
       )}
     >
       <CardItem as="h3" className={cn("text-light uppercase ")} translateZ="10">
