@@ -30,6 +30,27 @@ export const Work = () => {
           imageAlt="An screenshot of orwa's github hosted website"
           title="My Old Site"
         />
+
+        <WorkCard
+          href="https://rawan.co.il/"
+          imageSrc="https://k9x3ychkn3.ufs.sh/f/pneMvLq0K87MVytQ5ZrwOn3ojR0lYT4xbpcSJAkZmNFtBsg2"
+          imageAlt="An screenshot of rawan.co.il website"
+          title="rawan.co.il"
+        />
+
+        <WorkCard
+          href="https://skate.orwa.dev/en"
+          imageSrc="https://k9x3ychkn3.ufs.sh/f/pneMvLq0K87M0hD3fMO5x4L1XPwqYKANpJhbCeV8RMWygdFI"
+          imageAlt="An screenshot of skate.orwa.dev website"
+          title="Skate Shop"
+        />
+
+        <WorkCard
+          href="https://www.mindcode.school/"
+          imageSrc="https://k9x3ychkn3.ufs.sh/f/pneMvLq0K87MzgEzw0FLPtmMDjdcyZ9aBV60osqRJh8CnKik"
+          imageAlt="An screenshot of mindcode.school website"
+          title="Mindcode School"
+        />
       </div>
     </section>
   );

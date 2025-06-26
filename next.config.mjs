@@ -10,6 +10,12 @@ const nextConfig = {
       },
       {
         protocol: "https",
+        hostname: "k9x3ychkn3.ufs.sh",
+        port: "",
+        pathname: "/f/**",
+      },
+      {
+        protocol: "https",
         hostname: "cdn.brandfetch.io",
         port: "",
         search: "?c=1idpaZznFLrbi-vA0Q1",
@@ -23,5 +29,4 @@ const nextConfig = {
     ],
   },
 };
-
 export default nextConfig;
